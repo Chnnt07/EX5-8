@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exercise 7 - Cards Columns</title>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <style>
+        /* Tùy chỉnh màu nền cho 3 Card giống hình mẫu */
+        .card-blue { background-color: #3b82f6; }   /* Xanh dương */
+        .card-yellow { background-color: #fbbf24; } /* Vàng */
+        .card-red { background-color: #dc3545; }    /* Đỏ */
+        
+        /* Chỉnh tỷ lệ ảnh và nền trắng cho ô tô */
+        .car-img {
+            background-color: white;
+            object-fit: contain; 
+            height: 220px; 
+            width: 100%;
+        }
+        
+        /* Custom padding cho phần body chứa chữ */
+        .custom-card-body {
+            padding: 8px 5px;
+            color: black;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        <h4 class="mb-3 fw-bold text-dark border-dark pb-2">Cards Columns</h4>
+
+        <div class="row g-3">
+            
+            <div class="col-md-4">
+                <div class="card card-blue p-2 border-0 rounded-0 h-100">
+                    <img src="https://pngimg.com/uploads/toyota/toyota_PNG1944.png" class="card-img-top car-img rounded-0" alt="Car Blue">
+                    <div class="card-body text-center custom-card-body">
+                        Some text inside the first card
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-yellow p-2 border-0 rounded-0 h-100">
+                    <img src="https://pngimg.com/uploads/toyota/toyota_PNG1944.png" class="card-img-top car-img rounded-0" alt="Car Yellow">
+                    <div class="card-body text-center custom-card-body">
+                        Some text inside the first card
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-red p-2 border-0 rounded-0 h-100">
+                    <img src="https://pngimg.com/uploads/toyota/toyota_PNG1944.png" class="card-img-top car-img rounded-0" alt="Car Red">
+                    <div class="card-body text-center custom-card-body">
+                        Some text inside the first card
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
