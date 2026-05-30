@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exercise 3</title>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <style>
+        .custom-container {
+            max-width: 900px;
+            margin-top: 50px;
+        }
+        .header-box {
+            background-color: #e9ecef;
+            padding: 50px 30px;
+            margin-bottom: 25px;
+        }
+        .grid-box {
+            background-color: #d3d3d3;
+            border: 1px solid #8e8e8e;
+            padding: 10px 15px;
+            height: 100%;
+        }
+        .footer-box {
+            background-color: #d2c0c0;
+            padding: 10px;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .row.g-0 [class*="col-"] {
+            padding: 0;
+        }
+        .grid-box {
+            margin-right: -1px;
+            margin-bottom: -1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container custom-container">
+        
+        <div class="header-box">
+            <h1 class="display-6 fw-normal m-0">Let's test the grid!</h1>
+        </div>
+
+        <ul class="nav mb-4">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+
+        <div class="row g-0">
+            <div class="col-6"><div class="grid-box">First col</div></div>
+            <div class="col-6"><div class="grid-box">Second col</div></div>
+        </div>
+        
+        <div class="row g-0">
+            <div class="col-4"><div class="grid-box">col</div></div>
+            <div class="col-4"><div class="grid-box">col</div></div>
+            <div class="col-4"><div class="grid-box">col</div></div>
+        </div>
+        
+        <div class="row g-0">
+            <div class="col-3"><div class="grid-box">col</div></div>
+            <div class="col-3"><div class="grid-box">col</div></div>
+            <div class="col-3"><div class="grid-box">col</div></div>
+            <div class="col-3"><div class="grid-box">col</div></div>
+        </div>
+
+        <div class="footer-box">
+            Created by ABC!
+        </div>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+</body>
+</html>
