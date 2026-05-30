@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise 8 - Form Control</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .form-wrapper {
+            max-width: 600px;
+            margin: 2rem auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container form-wrapper">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            Vui lòng điền đầy đủ thông tin.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <h1 class="mb-4 text-dark">Form đặt vé máy bay</h1>
+
+        <form>
+            <div class="mb-3">
+                <label for="hoTen" class="form-label text-secondary">Họ tên</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-light"><i class="fa-regular fa-user"></i></span>
+                    <input type="text" class="form-control" id="hoTen" placeholder="Họ tên">
+                    <span class="input-group-text bg-light">vnđ</span>
+                </div>
+                <div class="form-text text-secondary">Phải nhập 5 ký tự, in hoa....</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="diaChi" class="form-label text-secondary">Địa chỉ</label>
+                <input type="text" class="form-control" id="diaChi">
+                <div class="form-text text-secondary">Phải nhập 5 ký tự, in hoa....</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="diTu" class="form-label text-secondary">Đi từ</label>
+                    <select class="form-select text-secondary" id="diTu">
+                        <option>Hà nội</option>
+                        <option>Đà Nẵng</option>
+                        <option>TP. HCM</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="den" class="form-label text-secondary">Đến</label>
+                    <select class="form-select text-secondary" id="den">
+                        <option>Hà nội</option>
+                        <option>Đà Nẵng</option>
+                        <option>TP. HCM</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label text-secondary d-block">Chọn chiều đi (Khứ hồi)</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="chieuDi">
+                    <label class="form-check-label text-secondary" for="chieuDi">Đi</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="chieuVe">
+                    <label class="form-check-label text-secondary" for="chieuVe">Về</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 fw-bold">Đặt vé</button>
+        </form>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
