@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exercise 5 </title>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .fpt-orange-bg {
+            background-color: #eb7c2b; 
+        }
+        .btn-fpt {
+            background-color: #eb7c2b;
+            color: white;
+        }
+        .btn-fpt:hover {
+            background-color: #d16b22;
+            color: white;
+        }
+        .nav-link-custom {
+            color: white !important;
+            font-weight: 500;
+        }
+        .navbar-brand-custom {
+            background-color: white;
+            padding: 5px 15px;
+            border-radius: 4px;
+        }
+        
+     
+        .card-img-top-wrapper {
+            width: 100%;
+            aspect-ratio: 1 / 1;  
+            overflow: hidden; 
+        }
+        
+        .student-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fpt-orange-bg navbar-dark py-1">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand navbar-brand-custom me-4" href="#">
+                <img src="logo.png" alt="FPT Logo" style="height: 35px;">
+            </a>
+            
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fa-solid fa-house me-1"></i>Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fa-solid fa-graduation-cap me-1"></i>Ngành học</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fa-solid fa-address-card me-1"></i>Tuyển sinh</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fa-solid fa-list me-1"></i>Sinh viên</a></li>
+                </ul>
+                <form class="d-flex align-items-center">
+                    <span class="me-2 text-dark fw-bold">Search:</span>
+                    <input class="form-control form-control-sm rounded-0" type="search" style="width: 200px;">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <img src="banner.png" alt="FPT Students Banner" class="img-fluid w-100">
+
+    <div class="container my-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-light p-2 rounded d-inline-flex">
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-primary">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Students</li>
+            </ol>
+        </nav>
+
+        <h2 class="text-center my-4 fw-normal text-dark">Students Detail</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4 mb-5 pb-4">
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 rounded-0">
+                    <div class="card-img-top-wrapper">
+                        <img src="sv1.png" class="card-img-top rounded-0 student-img" alt="SV1">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="mb-3 text-secondary">DE160182</h6>
+                        <div class="d-flex justify-content-between px-2 mb-3">
+                            <span class="text-dark text-start">Nguyễn Hữu Quốc Khánh</span>
+                            <span class="text-dark text-end">DaNang</span>
+                        </div>
+                        <div class="d-flex justify-content-center gap-4 mb-3">
+                            <label><input type="radio" name="att1"> Absent</label>
+                            <label><input type="radio" name="att1"> Present</label>
+                        </div>
+                        <button class="btn btn-fpt px-4 py-1">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 rounded-0">
+                    <div class="card-img-top-wrapper">
+                        <img src="sv2.png" class="card-img-top rounded-0 student-img" alt="SV2">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="mb-3 text-secondary">DE160377</h6>
+                        <div class="d-flex justify-content-between px-2 mb-3">
+                            <span class="text-dark text-start">Choy Vĩnh Thiên</span>
+                            <span class="text-dark text-end">QuangNam</span>
+                        </div>
+                        <div class="d-flex justify-content-center gap-4 mb-3">
+                            <label><input type="radio" name="att2"> Absent</label>
+                            <label><input type="radio" name="att2"> Present</label>
+                        </div>
+                        <button class="btn btn-fpt px-4 py-1">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 rounded-0">
+                    <div class="card-img-top-wrapper">
+                        <img src="sv3.png" class="card-img-top rounded-0 student-img" alt="SV3">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="mb-3 text-secondary">DE160547</h6>
+                        <div class="d-flex justify-content-between px-2 mb-3">
+                            <span class="text-dark text-start">Đỗ Nguyên Phúc</span>
+                            <span class="text-dark text-end">QuangNam</span>
+                        </div>
+                        <div class="d-flex justify-content-center gap-4 mb-3">
+                            <label><input type="radio" name="att3"> Absent</label>
+                            <label><input type="radio" name="att3"> Present</label>
+                        </div>
+                        <button class="btn btn-fpt px-4 py-1">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 rounded-0">
+                    <div class="card-img-top-wrapper">
+                        <img src="sv4.png" class="card-img-top rounded-0 student-img" alt="SV4">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="mb-3 text-secondary">DE170049</h6>
+                        <div class="d-flex justify-content-between px-2 mb-3">
+                            <span class="text-dark text-start">Lê Hoàng Minh</span>
+                            <span class="text-dark text-end">DaNang</span>
+                        </div>
+                        <div class="d-flex justify-content-center gap-4 mb-3">
+                            <label><input type="radio" name="att4"> Absent</label>
+                            <label><input type="radio" name="att4"> Present</label>
+                        </div>
+                        <button class="btn btn-fpt px-4 py-1">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="fpt-orange-bg pt-4 pb-2">
+        <div class="container-fluid px-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0 text-dark">
+                    <h5 class="fw-bold mb-2">Our Address</h5>
+                    <p class="m-0 mb-1">Khu đô thị FPT Đà Nẵng</p>
+                    <p class="m-0 mb-1"><i class="fa-solid fa-phone me-1"></i> +8402311111</p>
+                    <p class="m-0 mb-1"><i class="fa-solid fa-fax me-1"></i> +852 8765 4321</p>
+                    <p class="m-0"><i class="fa-solid fa-envelope me-1"></i> <a href="mailto:fptudn@fpt.edu.vn" class="text-primary text-decoration-none">fptudn@fpt.edu.vn</a></p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end justify-content-start gap-3 fs-4">
+                    <a href="#" class="text-dark text-decoration-none"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="text-dark text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-dark text-decoration-none"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="text-dark text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-dark text-decoration-none"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="text-dark text-decoration-none"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="text-center text-dark mt-4">
+                © Copyright 2023
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+</body>
+</html>
